@@ -2,57 +2,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap');
 
 .landing {
-    display: flex;
-    width: 1920px;
-    height: 1196px;
-    background-color: #FD5334;
-    font-family: 'Nunito', 'Open Sans';
+	display: flex;
+	width: 1920px;
+	height: 1196px;
+	background-color: #fd5334;
+	font-family: 'Nunito', 'Open Sans';
 }
 
 .landing--photo {
-    width: 923px;
-    height: 1112px;
+	width: 923px;
+	height: 1112px;
 }
 
 .landing--quote {
-    color: #FFFFFF;
-    font-size: 80px;
-    font-weight: 800;
-    margin-top: 265px;
-    margin-left: 85px;
+	color: #ffffff;
+	font-size: 80px;
+	font-weight: 800;
+	margin-top: 265px;
+	margin-left: 85px;
 }
 
 .quote--small {
-    position: absolute;
-    margin-top: 40px;
-    margin-left: 20px; 
-    font-size: 20px;
-    font-weight: 700;
-    color: #212529;
-    align-items: center;
+	position: absolute;
+	margin-top: 40px;
+	margin-left: 20px;
+	font-size: 20px;
+	font-weight: 700;
+	color: #212529;
+	align-items: center;
 }
 
 .landing--button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #212529;
-    gap: 8px;
-    border-radius: 8px;
-    color: white;
-    width: 191px;
-    height: 53px;
-    margin-left: 85px;
-    margin-top: 102px;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
-    text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #212529;
+	gap: 8px;
+	border-radius: 8px;
+	color: white;
+	width: 191px;
+	height: 53px;
+	margin-left: 85px;
+	margin-top: 102px;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 27px;
+	text-decoration: none;
 }
 
 .landing--arrow {
-    width: 24px;
-    height: 24px;
+	width: 24px;
+	height: 24px;
 }

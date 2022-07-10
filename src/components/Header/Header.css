@@ -1,23 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,700;0,800;1,500;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap');
 
-
 .header {
-    display: flex;
-    align-items: center;
-    background-color: #7025FB;
-    font-family: 'Nunito', 'Open Sans';
-    font-weight: 700;
-    height: 84px;
-    max-width: 923px;
+	display: flex;
+	align-items: center;
+	background-color: #7025fb;
+	font-family: 'Nunito', 'Open Sans';
+	font-weight: 700;
+	height: 84px;
+	max-width: 923px;
 }
-    
+
 .header .vector {
-    margin-left: 60px;
+	margin-left: 60px;
 }
 
 .header p {
-  color: #FFFFFF;
-  margin-left: 8.27px;
-  font-size: 24px;
+	color: #ffffff;
+	margin-left: 8.27px;
+	font-size: 24px;
 }

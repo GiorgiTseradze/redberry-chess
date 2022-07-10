@@ -2,195 +2,249 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap');
 
 .info {
-    display: flex;
-    width: 1920px;
-    height: 1196px;
-    font-family: 'Nunito', 'Open Sans';
+	display: flex;
+	width: 1920px;
+	height: 1196px;
+	font-family: 'Nunito', 'Open Sans';
 }
 
 .info--left {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .info--photo {
-    width: 923px;
-    height: 996px;
+	width: 923px;
+	height: 996px;
 }
 
-
 .info--quote {
-    margin-top: 80px;
-    margin-left: 10px;
-    font-family: 'Nunito';
-    font-style: italic;
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 35px;
+	margin-top: 80px;
+	margin-left: 10px;
+	font-family: 'Nunito';
+	font-style: italic;
+	font-weight: 800;
+	font-size: 26px;
+	line-height: 35px;
 }
 
 .info--quote-small {
-    margin-top: 15px;
-    margin-left: 10px;
-    font-family: 'Nunito';
-    font-style: italic;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 33px;
-    color: #E5E6E8;
+	margin-top: 15px;
+	margin-left: 10px;
+	font-family: 'Nunito';
+	font-style: italic;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 33px;
+	color: #e5e6e8;
 }
 
 .info--header {
-    border-bottom: 1px solid rgba(185, 180, 196, 0.3);
-    height: 84px;
-    width: 999px;
-    margin: 0;
+	border-bottom: 1px solid rgba(185, 180, 196, 0.3);
+	height: 84px;
+	width: 999px;
+	margin: 0;
 }
 
 .header-text {
-    padding-top: 30px;
-    padding-left: 48px;
-    font-family: 'Open Sans';
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
+	padding-top: 30px;
+	padding-left: 48px;
+	font-family: 'Open Sans';
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
 }
 
 .input-field {
-    height: 270px;
-    width: 100%;
-    margin-top: 85px;
+	height: 270px;
+	width: 100%;
+	margin-top: 85px;
 }
 
 .input-group {
-    width: 80%;
-    height: 100%;
-    margin-left: 48px;
+	width: 80%;
+	height: 100%;
+	margin-left: 48px;
 }
 
 .input-div {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid rgba(185, 180, 196, 0.3);
-    height: 25%;
-    width: 100%;
-    padding: 8px 16px;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid rgba(185, 180, 196, 0.3);
+	height: 25%;
+	width: 100%;
+	padding: 8px 16px;
 }
 
 .input {
-    height: 100%;
-    width: 100%;
-    border: none;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 150%;
-    outline: none;
+	height: 100%;
+	width: 100%;
+	border: none;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 150%;
+	outline: none;
 }
 
 .input-span {
-    position: relative;
-
+	position: relative;
 }
 .input-span::after {
-    content: "*";
-    position: absolute;
-    left: 50px;
-    top: 20px;
-    color: red;
+	content: '*';
+	position: absolute;
+	left: 50px;
+	top: 20px;
+	color: red;
 }
 
 .input::placeholder {
-    color: #212529;
+	color: #212529;
 }
 
 .icon {
-    position: relative;
-    right: 0;
-    color: #3BAF77;
-    height: 20px;
+	position: relative;
+	right: 0;
+	color: #3baf77;
+	height: 20px;
 }
 
 .pagination {
-    display: flex;
-    margin-top: 135px;
-    margin-left: 48px;
-    height: 100px;
-    width: 100%;
+	display: flex;
+	margin-top: 135px;
+	margin-left: 48px;
+	height: 100px;
+	width: 100%;
 }
 
 .back-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px black solid;
-    width: 128px;
-    height: 53px;
-    border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px black solid;
+	width: 128px;
+	height: 53px;
+	border-radius: 8px;
 }
 
 .next-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    border: 1px black solid;
-    margin-left: 550px;
-    width: 128px;
-    height: 53px;
-    background-color: #212529;
-    border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	border: 1px black solid;
+	margin-left: 550px;
+	width: 128px;
+	height: 53px;
+	background-color: #212529;
+	border-radius: 8px;
 }
 
 .back {
-    color: #212529;
-    text-decoration: none;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
-    padding: 13px 40px;
+	color: #212529;
+	text-decoration: none;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 27px;
+	padding: 13px 40px;
 }
 
-.next { 
-    text-decoration: none;
-    color: #FFFFFF;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 27px;
-    padding: 13px 40px;
+.next {
+	text-decoration: none;
+	color: #ffffff;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 27px;
+	padding: 13px 40px;
 }
 
-input[type="date"]::-webkit-inner-spin-button,
-input[type="date"]::-webkit-calendar-picker-indicator {
-    display: none;
-    -webkit-appearance: none;
+input[type='date']::-webkit-inner-spin-button,
+input[type='date']::-webkit-calendar-picker-indicator {
+	display: none;
+	-webkit-appearance: none;
 }
 
 .info--asterisk-name {
-    margin-right: 695px;
-    color: red;
-    font-size: 16px;
+	margin-right: 695px;
+	color: red;
+	font-size: 16px;
 }
 
 .info--asterisk-mail {
-    margin-right: 620px;
-    color: red;
-    font-size: 16px;
+	margin-right: 620px;
+	color: red;
+	font-size: 16px;
 }
 
 .info--asterisk-phone {
-    margin-right: 615px;
-    color: red;
-    font-size: 16px;
+	margin-right: 615px;
+	color: red;
+	font-size: 16px;
 }
 
 .info--asterisk-dob {
-    margin-right: 637px;
-    color: red;
-    font-size: 16px;
+	margin-right: 630px;
+	color: red;
+	font-size: 16px;
+}
+
+.rules-div-name {
+	position: absolute;
+	display: flex;
+	justify-content: flex-end;
+	width: 200px;
+	height: 30px;
+	margin-left: 625px;
+	color: red;
+	font-size: 15px;
+	font-family: 'Nunito', 'Open Sans';
+}
+
+.rules-name {
+	color: red;
+	font-size: 15px;
+	font-family: 'Nunito', 'Open Sans';
+}
+
+.rules-div-email {
+	position: absolute;
+	display: flex;
+	justify-content: flex-end;
+	width: 200px;
+	height: 30px;
+	margin-left: 625px;
+	margin-top: 20px;
+	color: red;
+	font-size: 15px;
+	font-family: 'Nunito', 'Open Sans';
+}
+
+.rules-email {
+	color: red;
+	font-size: 15px;
+	font-family: 'Nunito', 'Open Sans';
+}
+
+.rules-div-phone {
+	position: absolute;
+	display: flex;
+	justify-content: flex-end;
+	width: 200px;
+	height: 30px;
+	margin-left: 625px;
+	margin-top: 40px;
+	color: red;
+	font-size: 15px;
+	font-family: 'Nunito', 'Open Sans';
+}
+
+.rules-phone {
+	color: red;
+	font-size: 15px;
+	font-family: 'Nunito', 'Open Sans';
 }
