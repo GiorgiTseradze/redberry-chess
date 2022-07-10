@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,700;0,800;1,500;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&display=swap');
+
+.progress-bar {
+    width: 100%;
+}
+
+.progress-bar-child {
+    display:flex;
+    width: 50%;
+    margin-top: 60px;
+}
+
+.progress-bar-box {
+    background: #F5F5F5;
+    border: 1px solid #E5E6E8;
+    border-radius: 8px;
+    height: 40px;
+    width: 40px;
+    
+}
+.progress-bar-inner-box{
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.progress-bar-inner-box-text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+}
+
+.progress-green {
+    background-color: #E9FAF1;
+}
+
+.child-1{
+    width: 50%;
+}
+
+.child-1 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child-2 {
+    width: 50%;
+    
+}
+
+.child-2 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personal-info {
+    margin-top: 112px;
+    margin-left: 48px;
+    width: 100%;
+}
+
+.personal-info-child {
+    width: 50%;
+}
+
+.title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.basic-info {
+    color: #95939A;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+}
