@@ -4,25 +4,58 @@ import Progress from '../Progress/Progress';
 import './Info.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react';
+import {
+	faCircleCheck,
+	faCircleExclamation,
+} from '@fortawesome/free-solid-svg-icons';
+import { useEffect, useState } from 'react';
 
 const Info = ({ data, handleChange, isFormValid }) => {
-	const [name, setName] = useState(false);
-	const [email, setEmail] = useState(false);
-	const [phone, setPhone] = useState(false);
+	const [isNameValid, setIsNameValid] = useState(true);
+	const [isEmailValid, setIsEmailValid] = useState(true);
+	const [isPhoneValid, setIsPhoneValid] = useState(true);
 
-	const handleClickName = () => {
-		setName((prevRules) => !prevRules);
+	//clicking on "next" gives alert box if any input is invalid
+	const handlePagination = () => {
+		if (!isFormValid.name) {
+			setIsNameValid(false);
+		} else {
+			setIsNameValid(true);
+		}
+
+		if (!isFormValid.email) {
+			setIsEmailValid(false);
+		} else {
+			setIsEmailValid(true);
+		}
+
+		if (!isFormValid.phone) {
+			setIsPhoneValid(false);
+		} else {
+			setIsPhoneValid(true);
+		}
 	};
 
-	const handleClickEmail = () => {
-		setEmail((prevRules) => !prevRules);
-	};
+	//logic for giving inputs red color when needed
+	useEffect(() => {
+		if (!isFormValid.name) {
+			setIsNameValid(false);
+		} else {
+			setIsNameValid(true);
+		}
 
-	const handleClickPhone = () => {
-		setPhone((prevRules) => !prevRules);
-	};
+		if (!isFormValid.email) {
+			setIsEmailValid(false);
+		} else {
+			setIsEmailValid(true);
+		}
+
+		if (!isFormValid.phone) {
+			setIsPhoneValid(false);
+		} else {
+			setIsPhoneValid(true);
+		}
+	}, [isFormValid]);
 
 	return (
 		<div className='info'>
@@ -44,36 +77,56 @@ const Info = ({ data, handleChange, isFormValid }) => {
 					<p className='header-text'>Start Creating Your Account</p>
 				</div>
 
+				{!isNameValid && (
+					<div className='name-alert'>
+						<div className='alert-div'>
+							<FontAwesomeIcon
+								icon={faCircleExclamation}
+								className='exclamation'
+							/>
+							<p className='alert-header'>Invalid name</p>
+						</div>
+						<p className='alert-text'>Please enter more than 2 letters</p>
+					</div>
+				)}
+
+				{!isEmailValid && (
+					<div className='email-alert'>
+						<div className='alert-div'>
+							<FontAwesomeIcon
+								icon={faCircleExclamation}
+								className='exclamation'
+							/>
+							<p className='alert-header'>Invalid email</p>
+						</div>
+						<p className='alert-text'>Email should end with @redberry.ge</p>
+					</div>
+				)}
+
+				{!isPhoneValid && (
+					<div className='phone-alert'>
+						<div className='alert-div'>
+							<FontAwesomeIcon
+								icon={faCircleExclamation}
+								className='exclamation'
+							/>
+							<p className='alert-header'>Invalid phone number</p>
+						</div>
+						<p className='alert-text'>Please enter 9 digits</p>
+					</div>
+				)}
+
 				<Progress title='Personal infomation' isFormValid={isFormValid} />
-
-				{name && (
-					<div className='rules-div-name'>
-						<p className='rules-name'>more than 2 letters</p>
-					</div>
-				)}
-
-				{email && (
-					<div className='rules-div-email'>
-						<p className='rules-email'>only @redberry.ge format</p>
-					</div>
-				)}
-
-				{phone && (
-					<div className='rules-div-phone'>
-						<p className='rules-phone'>should be 9 digits</p>
-					</div>
-				)}
 
 				<div className='input-field'>
 					<div className='input-group'>
 						<div className='input-div'>
 							<input
-								className='input'
+								className={isNameValid ? 'input' : 'input-red'}
 								placeholder='Name'
 								name='name'
 								onChange={handleChange}
 								value={data.name}
-								onClick={handleClickName}
 							/>
 							{data.name.length === 0 && (
 								<span className='info--asterisk-name'>*</span>
@@ -85,12 +138,11 @@ const Info = ({ data, handleChange, isFormValid }) => {
 
 						<div className='input-div'>
 							<input
-								className='input'
+								className={isEmailValid ? 'input' : 'input-red'}
 								placeholder='Email address'
 								name='email'
 								onChange={handleChange}
 								value={data.email}
-								onClick={handleClickEmail}
 							/>
 							{data.email.length === 0 && (
 								<p className='info--asterisk-mail'>*</p>
@@ -102,12 +154,11 @@ const Info = ({ data, handleChange, isFormValid }) => {
 
 						<div className='input-div'>
 							<input
-								className='input'
+								className={isPhoneValid ? 'input' : 'input-red'}
 								placeholder='Phone number'
 								name='phone'
 								onChange={handleChange}
 								value={data.phone}
-								onClick={handleClickPhone}
 							/>
 							{data.phone.length === 0 && (
 								<p className='info--asterisk-phone'>*</p>
@@ -139,22 +190,17 @@ const Info = ({ data, handleChange, isFormValid }) => {
 							Back
 						</Link>
 					</div>
-					<div className='next-div'>
-						<Link
-							className='next'
-							style={{
-								pointerEvents:
-									isFormValid.name &&
-									isFormValid.email &&
-									isFormValid.phone &&
-									isFormValid.dob
-										? 'auto'
-										: 'none',
-							}}
-							to='/experience'
-						>
-							Next
-						</Link>
+					<div className='next-div' onClick={handlePagination}>
+						{!isFormValid.name ||
+						!isFormValid.email ||
+						!isFormValid.phone ||
+						!isFormValid.dob ? (
+							<p className='next'>Next</p>
+						) : (
+							<Link className='next' to='/experience'>
+								Next
+							</Link>
+						)}
 					</div>
 				</div>
 			</div>

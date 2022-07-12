@@ -57,12 +57,12 @@
 
 .input-field {
 	height: 270px;
-	width: 100%;
+	width: 775px;
 	margin-top: 85px;
 }
 
 .input-group {
-	width: 80%;
+	width: 775px;
 	height: 100%;
 	margin-left: 48px;
 }
@@ -72,13 +72,13 @@
 	align-items: center;
 	border-bottom: 1px solid rgba(185, 180, 196, 0.3);
 	height: 25%;
-	width: 100%;
+	width: 775px;
 	padding: 8px 16px;
 }
 
 .input {
-	height: 100%;
-	width: 100%;
+	height: 46px;
+	width: 775px;
 	border: none;
 	font-family: 'Open Sans';
 	font-style: normal;
@@ -86,11 +86,29 @@
 	font-size: 20px;
 	line-height: 150%;
 	outline: none;
+	padding: 5px;
+}
+
+.input-red {
+	position: absolute;
+	background: #ffefef;
+	color: #dc3545;
+	height: 46px;
+	width: 752px;
+	border: none;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 150%;
+	outline: none;
+	padding: 5px;
 }
 
 .input-span {
 	position: relative;
 }
+
 .input-span::after {
 	content: '*';
 	position: absolute;
@@ -103,9 +121,95 @@
 	color: #212529;
 }
 
+.input:focus,
+.input:active {
+	outline: none;
+	background-color: #e9ecef;
+}
+
+.name-alert {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	color: red;
+	top: 150px;
+	left: 1520px;
+	width: 350px;
+	height: 87px;
+	background: rgba(255, 255, 255, 0.85);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+}
+
+.email-alert {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	color: red;
+	top: 250px;
+	left: 1520px;
+	width: 350px;
+	height: 87px;
+	background: rgba(255, 255, 255, 0.85);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+}
+
+.phone-alert {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	color: red;
+	top: 350px;
+	left: 1520px;
+	width: 350px;
+	height: 87px;
+	background: rgba(255, 255, 255, 0.85);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+}
+
+.alert-div {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 10px;
+	height: 45px;
+	border-bottom: 1px solid rgba(185, 180, 196, 0.3);
+	color: #dc3545;
+}
+
+.alert-header {
+	padding: 5px;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.alert-text {
+	display: flex;
+	flex-direction: row;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: #212529;
+	margin-left: 7px;
+	margin-top: 5px;
+}
+
+.exclamation {
+	color: red;
+}
 .icon {
-	position: relative;
-	right: 0;
+	position: absolute;
+	margin-left: 710px;
 	color: #3baf77;
 	height: 20px;
 }
