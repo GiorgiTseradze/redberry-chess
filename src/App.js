@@ -71,9 +71,12 @@ function App() {
 
 				break;
 
+			//email is only verified if at least one A-Za-z character is provided before @redberry.ge
 			case 'email':
+				const regexMail = /^[A-Za-z]+$/;
 				if (
-					value.substring(value.length - 12, value.length) === '@redberry.ge'
+					value.substring(value.length - 12, value.length) === '@redberry.ge' &&
+					regexMail.test(value.substring(value.length - 13, value.length - 12))
 				) {
 					test(name, true);
 				} else {
