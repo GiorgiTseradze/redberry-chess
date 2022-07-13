@@ -4,6 +4,7 @@
 .dropdownLevel {
 	display: flex;
 	flex-direction: column;
+	align-items: flex-start;
 	z-index: 1;
 	margin-left: 48px;
 	height: 46px;
@@ -12,7 +13,8 @@
 }
 
 .dropdown-level-btn {
-	width: 353px;
+	display: flex;
+	width: 350px;
 	border: none;
 	outline: none;
 	cursor: pointer;
@@ -24,6 +26,10 @@
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 150%;
+}
+
+.dropdown-level-display {
+	width: 340px;
 }
 
 .dropdown-level-content {
@@ -73,6 +79,7 @@
 }
 
 .dropdown-player-btn {
+	display: flex;
 	width: 390px;
 	border: none;
 	outline: none;
@@ -85,6 +92,10 @@
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 150%;
+}
+
+.dropdown-player-display {
+	width: 360px;
 }
 
 .dropdown-player-content {
@@ -140,8 +151,6 @@
 }
 
 .dropdown-icon {
-	position: absolute;
-	margin-left: 140px;
 	color: grey;
 }
 

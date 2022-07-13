@@ -46,10 +46,12 @@ const DropdownPlayer = ({ setFormData, validate, isFormValid }) => {
 					className='dropdown-level-btn'
 					onClick={(e) => setIsActiveLevel(!isActiveLevel)}
 				>
-					{selection}{' '}
-					{!isFormValid.experience && (
-						<span className='dropdown--asterisk-experience'>*</span>
-					)}
+					<div className='dropdown-level-display'>
+						{selection}{' '}
+						{!isFormValid.experience && (
+							<span className='dropdown--asterisk-experience'>*</span>
+						)}
+					</div>
 					{isActiveLevel ? (
 						<FontAwesomeIcon icon={faCaretUp} className='dropdown-icon' />
 					) : (
@@ -90,10 +92,12 @@ const DropdownPlayer = ({ setFormData, validate, isFormValid }) => {
 					className='dropdown-player-btn'
 					onClick={(e) => setIsActivePlayer(!isActivePlayer)}
 				>
-					{selectionPlayer}{' '}
-					{!isFormValid.experience && (
-						<span className='dropdown--asterisk-experience'>*</span>
-					)}
+					<div className='dropdown-player-display'>
+						{selectionPlayer}{' '}
+						{!isFormValid.experience && (
+							<span className='dropdown--asterisk-experience'>*</span>
+						)}
+					</div>
 					{isActivePlayer ? (
 						<FontAwesomeIcon icon={faCaretUp} className='dropdown-icon' />
 					) : (
