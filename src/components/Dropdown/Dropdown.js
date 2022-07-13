@@ -3,10 +3,6 @@ import axios from 'axios';
 import './Dropdown.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown, faCaretUp } from '@fortawesome/free-solid-svg-icons';
-import nona from '../../images/nona.jpg';
-import magnus from '../../images/magnus.jpg';
-import mikhail from '../../images/mikhail.jpg';
-import bobby from '../../images/bobby.webp';
 import { v4 as uuidv4 } from 'uuid';
 
 const DropdownPlayer = ({ setFormData, validate, isFormValid }) => {
@@ -18,7 +14,6 @@ const DropdownPlayer = ({ setFormData, validate, isFormValid }) => {
 		'Choose your character'
 	);
 	const options = ['beginner', 'normal', 'professional'];
-	const photos = [nona, mikhail, bobby, magnus];
 
 	let size = data && Object.keys(data).length;
 
@@ -130,7 +125,7 @@ const DropdownPlayer = ({ setFormData, validate, isFormValid }) => {
 									>
 										<p className='player-name'>{player.name}</p>
 										<img
-											src={photos[player.id - 1]}
+											src={`https://chess-tournament-api.devtest.ge/${player.image}`}
 											alt={player.name}
 											className='dropdown-image'
 										/>
